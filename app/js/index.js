@@ -4,28 +4,19 @@ require('styles/main.scss');
 import $ from 'jquery';
 import {log, logTitle} from 'logger';
 /* your imports */
-logTitle('Arrays')
+logTitle('Arithmetic Operators')
 /* coding examples */
 
-/* Arrays */
+/* Arithmetic Operators */
+// + - / * %
 
-var names = ["Damine", "mohamed", "Saad", 21,true]
-
-log(names + " type= " + typeof names);
-
-
-log("name in p 2 is "+names[2]);
-log("has size "+ names.length);
-
-log("normal loop ")
-
-//loop for
-for(var n of names){
-    log(n + " type= " + typeof n);
-}
-
-log("forEach loop ")
-
-names.forEach(function(n,index) {
-    log(n + " type= " + typeof n +" with index "+ index);
-})
+var addition = 2 + 2;
+log("addition = 2 + 2 is " + addition);
+var subtraction = 9 - 5;
+log("subtraction = 9 - 5 " + subtraction);
+var division = 16 / 4;
+log("division = 16 / 4 is " + division);
+var multiplication = 2 * 2;
+log("multiplication = 2 * 2 is " + multiplication)
+var reminder = 4 % 5;
+log("reminder = 4 % 5 is " + reminder)
