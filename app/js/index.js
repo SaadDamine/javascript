@@ -7,32 +7,15 @@ import {log, logTitle} from 'logger';
 logTitle('Title')
 /* coding examples */
 
-/* objects */
+/* Variables */
 
 var name = "Damine mohamed";
 var age = 21.5;
 var hasDRiverLicence = true;
+var empty = undefined
 
-var person = {
-    name: "Damine mohamed",
-    age: 21,
-    hasDRiverLicence: true,
-    dateOfBirth: "18/06/1995",
-    address:{
-        firstLine: "123",
-        postCode:"14010",
-        country:"alg"
-    }
-};
+log(name + " type= " + typeof name);
+log(age + " type= " + typeof age);
+log(hasDRiverLicence + " type= " + typeof hasDRiverLicence);
+log(empty + " type= " + typeof empty);
 
-log(JSON.stringify(person));
-log(JSON.stringify(person.address))
-
-log(person.name);
-log(person.age);
-log(person.hasDRiverLicence);
-log(person.dateOfBirth);
-
-
-log(Object.values(person))
-log(Object.values(person.address))
